@@ -72,13 +72,10 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-builders/jest:run",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
             "tsConfig": "tsconfig.spec.json",
+            "configPath":"./jest.config.js",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -91,5 +88,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f52b78b5-29c1-4a40-b276-ad1588871ba5"
   }
 }
