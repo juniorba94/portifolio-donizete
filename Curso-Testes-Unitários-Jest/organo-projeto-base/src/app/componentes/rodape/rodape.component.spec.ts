@@ -1,19 +1,19 @@
-import { CabecalhoComponent } from "./cabecalho.component"
-import {ComponentFixture, TestBed} from "@angular/core/testing";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { RodapeComponent } from "./rodape.component"
 
-describe('CabecalhoComponent', () => {
-    let component: CabecalhoComponent;
-    let fixture: ComponentFixture<CabecalhoComponent>;
+describe('RodapeComponent', () => {
+    let component: RodapeComponent;
+    let fixture: ComponentFixture<RodapeComponent>;
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [CabecalhoComponent],
+            imports: [RodapeComponent],
         })
-        fixture = TestBed.createComponent(CabecalhoComponent);
+        fixture = TestBed.createComponent(RodapeComponent);
         component = fixture.componentInstance;
     });
 
-    it('deveria ser criado', () => {
+        it('deveria ser criado', () => {
         expect(component).toBeTruthy();
     })
 
@@ -28,4 +28,3 @@ describe('CabecalhoComponent', () => {
         expect(component).toMatchSnapshot();
     })
 })
-
