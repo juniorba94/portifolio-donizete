@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
 public class Pessoa {
+   void saudacao() {
+       System.out.println("Olá,mundo!");
+   }
+
 }
